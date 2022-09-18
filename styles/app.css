@@ -1,0 +1,298 @@
+/* all elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+    
+html, body {
+    margin:0; padding:0;
+    min-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* all files */
+.mainNav {
+    display: flex;
+    justify-content: space-around;
+    background-color: greenyellow;
+    height: 50px;
+    border: 5px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px 40px 0px 40px;
+    font-weight: 700;
+}
+
+.mainHeader {
+    display: inline;
+    font-size: 2rem;
+}
+
+.navbarLink {
+    margin-top: 15px;
+    display: inline;
+    font-size: 1.5rem;
+}
+
+.mainMenuFooter {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 4px solid black;
+    padding: 10px;
+    background-color: palegoldenrod;
+}
+
+/* index.html */
+.mainWrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    height: 600px;
+    border: 5px solid black;
+    padding: 50px;
+}
+
+.formWrapper {
+    padding-top: 20px;
+    width: 300px;
+    height: 480px;
+    border: 4px solid black;
+}
+
+.formLabel {
+    font-weight: 700;
+    margin: 0px 5px;
+}
+
+.formUnit {
+    margin-right: 10px;
+}
+
+.formTextInput {
+    margin: 2px;
+    margin-right: 0;
+    height: 20px;
+    width: 30px;
+    padding: 2px;
+}
+
+.formRadioHeader {
+    margin: 10px 5px;
+    font-weight: 700;
+}
+
+.formRadioInput {
+    margin: 10px 0;
+}
+
+.formAgeTextLabel {
+    margin-left: 24px;
+}
+
+.formHeightTextLabel {
+    margin-left: 5px;
+}
+
+.formRadioLabel {
+    margin-right: 28px;
+}
+
+.formRadioInput {
+    margin-left: 10px;
+}
+
+.formSelect {
+    height: 30px;
+    width: 150px;
+}
+
+.formActivityLabel {
+    margin-right: 30px;
+}
+
+.formSubmitBtn {
+    background-color: antiquewhite;
+    height: 70px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 1.2rem;
+}
+
+.currentPlanWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 500px;
+    width: 500px;
+    border: 4px solid black;
+}
+
+.currentPlanBlock {
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    border: 2px solid black;
+    flex-basis: 20%;
+}
+
+.currentPlanHeader {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+}
+
+.currentPlanImage {
+    max-height: 96px;
+    width: 250px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border-right: 4px solid black;
+}
+
+.currentPlanMeal {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* viewMeals.html */ 
+.categoryListWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categoryWrapper {
+    flex-basis: 18%;
+    border: 4px solid black;
+    align-self: space-between;
+}
+
+.categoryHeader {
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+}
+
+.mealList {
+    list-style: none;
+}
+
+.mealListItem {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+/* viewPlan.html */
+
+.mealPlanTable {
+    width: 1000px;
+    border: 4px solid black;
+    margin: auto;
+    padding: 10px;
+}
+
+.mealPlanTable th, td {
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* viewMeal.html */
+
+.mealViewDisclaimer {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.mealViewMainWrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr;
+    margin: auto;
+    height: 500px;
+    width: 800px;
+    border: 4px solid black;
+}
+
+.mealViewMainWrapper h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.mealViewHeader {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+
+.mealViewImageWrapper {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    border: 2px solid black;
+}
+
+.mealViewImage {
+    height: 100%;
+    width: 100%;
+}
+
+.mealViewInfoWrapper {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 1.5rem;
+    border: 1px solid black;
+}
+
+.mealViewInfoWrapper p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+}
+
+.mealViewMacroWrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mealViewIngredientWrapper {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border: 1px solid black;
+}
+
+.mealViewIngredientList {
+    margin-left: 25px;
+}
+
+.mealViewRecipeWrapper {
+    grid-column: 2/3;
+    grid-row: 3/5;
+    border: 1px solid black;
+}
+
+.mealViewRecipe {
+    margin-left: 25px;
+}
+

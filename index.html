@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/app.css">
+    <title>Week 7 Home Page</title>
+</head>
+<body>
+    <nav class="mainNav">
+        <li class="navbarLink"><a href="viewRecipes.html">View Recipes</a></li>
+        <h1 class="mainHeader">Home Page</h1>
+        <li class="navbarLink"><a href="viewPlan.html">View Current Plan</a></li>
+    </nav>
+
+    <div class="mainWrapper">
+        <div class="formWrapper">
+            <form action="">
+
+                <label class="formLabel" for="">Age</label>
+                <input class="formTextInput formAgeTextLabel" type="text">
+                <br>
+                <br>
+
+                <label class="formLabel" for="">Weight</label>
+                <input class="formTextInput" type="text">
+                <span class="formUnit">lbs</span>
+                <br>
+                <br>
+
+                <label class="formLabel" for="">Height</label>
+                <input class="formTextInput formHeightTextLabel" type="text">
+                <span class="formUnit">ft</span>
+                <input class="formTextInput" type="text">
+                <span class="formUnit">in</span>
+                <br>
+                <br>
+
+                <span class="formLabel formRadioLabel">M/F</span>
+                <input class="formRadioInput"type="radio" id="radioInputM" name="genderInput">
+                <label class="formRadioOption"for="radioInputM">M</label>
+                <input class="formRadioInput"type="radio" id="radioInputF" name="genderInput">
+                <label class="formRadioOption"for="radioInputF">F</label>
+
+                <br>
+                <br>
+
+                <label class="formLabel formActivityLabel" for="FormActivityLevel">Activity Level</label>
+                <select class="formSelect" name="" id="FormActivityLevel">
+                    <option value="sedimentary">Sedimentary</option>
+                    <option value="light">Light</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="active">Active</option>
+                    <option value="veryActive">Very Active</option>
+                </select>
+                <br>
+                <br>
+
+                <label class="formLabel" for="FormWeightLossSelect">Weight Loss Goal</label>
+                <select class="formSelect" name="" id="FormWeightLossSelect">
+                    <option value="maintain"> Maintain</option>
+                    <option value="mild"> .5lb / week</option>
+                    <option value="normal"> 1lb / week</option>
+                    <option value="extreme"> 2lbs / week</option>
+                </select>
+                <br>
+                <br>
+
+                <button class="formSubmitBtn">Generate Meal Plan!</button>
+            </form>
+        </div>
+    
+        <div class="currentPlanWrapper">
+            <div class="currentPlanBlock">
+                <h3 class="currentPlanHeader">Breakfast</h3>
+                <img src="images/Bacon_&_Eggs.jpg" alt="" class="currentPlanImage">
+                <a class="currentPlanMeal" href="/templates/viewMeal.html">Bacon and Eggs</a>
+            </div>
+            <div class="currentPlanBlock">
+                <h3 class="currentPlanHeader">Lunch</h3>
+                <img src="images/Turkey_Wrap.png" alt="" class="currentPlanImage">
+                <a class="currentPlanMeal" href="/templates/viewMeal.html">Turkey Wrap</a>
+            </div>
+            <div class="currentPlanBlock">
+                <h3 class="currentPlanHeader">Dinner</h3>
+                <img src="images/Stovetop_Chicken.jpg" alt="" class="currentPlanImage">
+                <a class="currentPlanMeal" href="/templates/viewMeal.html">Stovetop Chicken</a>
+            </div>
+            <div class="currentPlanBlock">
+                <h3 class="currentPlanHeader">Snack</h3>
+                <img src="images/Kale_Chips.jpg" alt="" class="currentPlanImage">
+                <a class="currentPlanMeal" href="/templates/viewMeal.html">Kale Chips</a>
+            </div>
+            <div class="currentPlanBlock">
+                <h3 class="currentPlanHeader">Drink</h3>
+                <img src="images/Water.jpg" alt="" class="currentPlanImage">
+                <a class="currentPlanMeal" href="/templates/viewMeal.html">Water</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
